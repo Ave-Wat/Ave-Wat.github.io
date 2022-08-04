@@ -1,0 +1,41 @@
+a {
+    text-decoration: underline;
+}
+
+p {
+    line-height: 1.5;
+    padding: 1rem 0;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+}
+
+.about__text {
+    z-index: 2;
+    flex-basis:65%; 
+}
+
+.about__image-container{
+    position:relative;
+    flex-basis:35%; 
+    margin-left: -70px;
+}
+
+.about__image {
+    border-radius: 50%;
+    opacity: .4;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.7s;
+    box-shadow: 0 0 8rem 4rem #1d262a;
+}
+/*#*1d262a*/
+
+.about__image:hover{
+    z-index:3;
+    opacity: .7;
+}

@@ -1,0 +1,135 @@
+.project {
+    display: flex;
+    padding: 1rem;
+    text-align: left;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /*max-width: 800px;*/
+}
+
+@media screen and (max-width: 810px) {
+    .project {
+        padding: 1rem 0;
+    }
+}
+
+
+.project__index {
+    flex: auto;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    text-align: right;
+    align-self: flex-start;
+
+}
+
+@media screen and (max-width: 810px) {
+    .project__index {
+        position: absolute;
+        top: -.5rem;
+        left: 0;
+    }
+}
+
+.project__button {
+    flex: auto;
+    padding: 0;
+    margin: 0 0 0 2rem;
+    height: 100%;
+    
+}
+
+.project__gray_on_hover {
+    margin: 0;
+}
+
+@media screen and (max-width: 810px) {
+    .project__button {
+        margin: 0 1rem;
+    }
+}
+
+.project__container {
+    flex-grow: 1;
+    width: 100%;
+    margin-top: 0;
+    padding: 2rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid gray;
+}
+
+@media screen and (min-width: 810px) {
+    .project__container {
+        width: 700px;
+        flex-wrap: nowrap;
+    }
+}
+
+.project__img {
+    flex: .2 .2 0;
+    margin-left: -1rem;
+    height: 15%;
+    width: 15%;
+    filter: grayscale(100%);
+}
+
+@media screen and (max-width: 810px) {
+    .project__img {
+        flex: .4 .4 0;
+    }
+}
+
+.project__details {
+
+    flex: .6 .6 0;
+    margin: 0 2rem;
+    padding-bottom: 3rem;
+    position: relative;
+
+    /*h2 {
+        margin: 0;
+        text-align: left;
+      }
+      div {
+        margin: 0;
+        text-align: left;
+        padding: .5rem 0 0 0;
+      }*/
+}
+
+@media screen and (min-width: 810px) {
+    .project__details {
+        flex: .4 .4 0;
+        margin: 0 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+}
+
+.project__details__links {
+    color: gray;
+    text-align: left;
+    font-size: .6rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+
+.project__details__description {
+
+    margin: 2rem;
+    text-align: left;
+    font-size: .9rem;
+}
+
+@media screen and (min-width: 810px) {
+    .project__details__description {
+        flex: .4 .4 0;
+        margin: 0 2rem 0 0;
+    }
+}
