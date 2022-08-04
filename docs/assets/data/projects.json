@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Stat220 Final Project",
+        "description": "Website displaying statistic analysis for Stat220 Data Science.",
+        "languages": [
+            "R",
+            "R-Shiny"
+        ],
+        "image_src": "/assets/images/statfinal.png",
+        "github_link": "https://github.com/Ave-Wat/stat220finalproject",
+        "web_link": "https://aokisherwoodb.shinyapps.io/demographics_police_violence/"
+    },
+    
+    {
+        "name": "OSv Operating System",
+        "description": "Basic OSv implementation for CS332 Operating Systems at Carleton College.",
+        "languages": [
+            "C",
+            "Assembly"
+        ],
+        "image_src": "/assets/images/osv.jpg",
+        "github_link": "https://github.com/Ave-Wat/osv-w22",
+        "web_link": null
+    },
+
+    {
+        "name": "The Panorama Project",
+        "description": "The Panorama Project aims to bring together a diverse group of students and members of civic organizations from around the country to collaborate on works of public-facing journalism that explore the history of bipartisanship and political polarization in the U.S.",
+        "languages": [
+            "HTML",
+            "Python",
+            "JavaScript",
+            "CSS"
+        ],
+        "image_src": "/assets/images/PanoProjectLogo.jpeg",
+        "github_link": "https://github.com/Ave-Wat/PanoramaProjectWebsite",
+        "web_link": "https://thepanoproject.com/"
+    },
+
+    {
+        "name": "Scheme Interpreter",
+        "description": "A simple Scheme interpreter for pedagogical purposes.",
+        "languages": [
+            "C",
+            "Scheme"
+        ],
+        "image_src": "/assets/images/lambda.png",
+        "github_link": "https://github.com/Ave-Wat/Scheme-Interpreter",
+        "web_link": null
+    },
+
+    {
+        "name": "Remote Connect to Labs",
+        "description": "Script used by the Carleton CS department to remotely connect to all CS department labs.",
+        "languages": [
+            "Shell",
+            "Python"
+        ],
+        "image_src": "/assets/images/remoteconnect.jpg",
+        "github_link": "https://github.com/Ave-Wat/RemoteConnectLabs",
+        "web_link": null
+    },
+
+    {
+        "name": "Twitter Network Analysis",
+        "description": "To analyze the social media network of P.M. Narendra Modi for Political Science research, we built a Twitter scraping tool using selenium and beautifulsoup. This tool was able to avoid the rate limits of Tweepy and has the capability to scrape Twitter friends, unlike popular tools currently in use, such as Twint. Using our tool, we found the first two degrees of P.M. Modi's Twitter network. We then calculated the top 1000 users by in-degree centrality, and created a graph of these users in the graph visualization software Gephi.",
+        "languages": [
+            "Python"
+        ],
+        "image_src": "/assets/images/media_viz.png",
+        "github_link": "https://github.com/Ave-Wat/TwitterNetworkAnalysis",
+        "web_link": null
+    },
+
+    {
+        "name": "MIAC Cross Country Analysis",
+        "description": "This was the final project for CS257. This project is a full-stack web application featuring front-end and a Posgresql database driven Flask API.",
+        "languages": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "image_src": "/assets/images/miac_analysis.png",
+        "github_link": "https://github.com/Ave-Wat/CS257SoftwareDesign/tree/master/webapp",
+        "web_link": null
+    },
+
+    {
+        "name": "Wikipaths",
+        "description": "Algorithm to find the shortest path through wikipedia pages for Data Structures (CS201). (For example, how many clicks does it take to get from the Duran Duran wikipedia page to the Canada Goose wikipedia page?).",
+        "languages": [
+            "Java"
+        ],
+        "image_src": "/assets/images/wikipaths.jpg",
+        "github_link": "https://github.com/Ave-Wat/Wikipaths",
+        "web_link": null
+    },
+
+    {
+        "name": "Word Cloud",
+        "description": "Algorithm to find the shortest path through wikipedia pages for Data Structures (CS201). (For example, how many clicks does it take to get from the Duran Duran wikipedia page to the Canada Goose wikipedia page?).",
+        "languages": [
+            "Java"
+        ],
+        "image_src": "/assets/images/word_cloud.jpg",
+        "github_link": "https://github.com/Ave-Wat/Wikipaths",
+        "web_link": null
+    },
+
+    {
+        "name": "3200m Time Prediction Algorithm",
+        "description": "Algorithm to find the shortest path through wikipedia pages for Data Structures (CS201). (For example, how many clicks does it take to get from the Duran Duran wikipedia page to the Canada Goose wikipedia page?).",
+        "languages": [
+            "Java"
+        ],
+        "image_src": "/assets/images/sophomore_to_senior.jpg",
+        "github_link": "https://github.com/Ave-Wat/Wikipaths",
+        "web_link": null
+    }
+]
+
