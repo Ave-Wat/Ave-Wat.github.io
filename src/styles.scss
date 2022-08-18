@@ -3,6 +3,12 @@
 @import url('https://fonts.googleapis.com/css?family=Cordo:200|Montserrat:200');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
+:root {
+    --main-black: #0a0c0e;
+    --main-white: #EEEDED;
+    --main-red: #BA6655;
+}
+
 body, html {
     
     font-family: 'EB Garamond', serif;
@@ -16,8 +22,14 @@ body, html {
 }
 
 a {
-    color: white;
+    color: var(--main-white);
     text-decoration: none;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    &:hover {
+        color: var(--main-red) !important;
+        text-decoration: underline;
+    }
 }
 
 p {
@@ -88,4 +100,27 @@ app-root {
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+.text-size-1{
+    font-size: 2em;
+}
+
+.text-size-2{
+    font-size: 1.5em;
+}
+
+.text-size-3 {
+    font-size: 1.17em;
+}
+
+.text-size-4 { //equal to p tag size
+    font-size: 1em;
+}
+
+.red-underline {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--main-red);
 }

@@ -33,6 +33,11 @@
             text-decoration-line: underline;
             text-decoration-thickness: 1px;
             text-underline-offset: 3px;
+            text-decoration-color:var(--main-red);
+            &:hover {
+                color: var(--main-red);
+                
+            }
         }
 
         p {
