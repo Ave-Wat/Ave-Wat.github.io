@@ -21,6 +21,7 @@
     }
 
     &__title {
+        z-index: 4;
         line-height: 2rem;
         padding: calc((100vh - 82px - 10rem)/2 - 2rem) 0;
         text-align: center;
@@ -28,7 +29,13 @@
 
         @media only screen and (max-width: 1000px) {
             display: block;
-            width: 100%;
+            position: absolute;
+            width: calc(100% - 8.5rem);
+            text-align: right;
+            font-weight:bold;
+            top: 40%;
+            -ms-transform: translateY(-40%);
+            transform: translateY(-40%);
         }
 
         h3 {
@@ -36,6 +43,8 @@
             text-decoration-thickness: 1px;
             text-underline-offset: 3px;
             animation: 1s ease-out 0s 1 slideInFromLeft;
+            z-index: 4;
+            position: relative;
         }
         span {
             font-family: 'Montserrat', sans-serif;
@@ -54,6 +63,32 @@
         p {
             text-align: right;
             animation: 1.25s ease-out 0s 1 slideInFromLeft;
+            z-index: 4;
+            position: relative;
+        }
+    }
+
+    &__mobile-image {
+        display: none;
+        @media only screen and (max-width: 1000px) {
+            z-index: 1;
+            display: block;
+            z-index: 0;
+            width: calc(100% - 6rem);
+            opacity: 1;
+            margin: 0;
+            margin-left: -2rem;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        img {
+            position: relative;
+            object-fit: cover;
+            width: 100%;
+            z-index: 0;
+            opacity: .7;
         }
     }
 

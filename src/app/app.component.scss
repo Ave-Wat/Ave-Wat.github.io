@@ -11,6 +11,9 @@ header {
         top: 50%;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
+        @media only screen and (max-width: 1000px){
+            font-size: 1.17em;
+        }
     }
 }
 
@@ -20,18 +23,25 @@ header {
 
 nav {
     font-family: 'Montserrat', sans-serif;
-    float: right;
+    text-align: right;
     margin-right: 15%;
 
     ul {
         margin-top: 0;
         margin-bottom: 0;
-        margin-right: 2.5rem;
-        margin-left: -2.5rem;
+        //margin-right: 2.5rem;
+        //margin-left: -2.5rem;
         position: absolute;
         top: 50%;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
+        align-items: right;
+        width: calc(50% - 2rem);
+        justify-content: flex-end;
+    }
+    li {
+        margin: 0;
+        margin-right: 10%;
     }
 }
 
@@ -42,6 +52,9 @@ ul {
 
 li {
     margin-right: 25%;
+    @media only screen and (max-width: 1000px){
+        margin-right: 5%;
+    }
 }
 
 a {
