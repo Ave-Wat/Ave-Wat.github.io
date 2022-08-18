@@ -1,23 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Cordo:200|Montserrat:200');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
-body {
+body, html {
     
-    font-family: 'Cordo', serif;
+    font-family: 'EB Garamond', serif;
     font-weight: 200;
     background-color: #0a0c0e;
     color: #EEEDED;
-}
-
-main {
-    padding: 5rem;
-
-} 
-@media screen and (max-width: 600px) {
-    main {
-        padding: 5rem 1rem;
-    }
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
 }
 
 a {
@@ -41,4 +36,56 @@ h1, h2, h3, h4, h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     text-transform: uppercase;
+    margin: 0;
+}
+
+footer {
+    height: 85px;
+    padding: 5rem 2rem;
+    background-color: #EEEDED;
+    color:#0a0c0e;
+    a {
+        color:#0a0c0e;
+    }
+
+    ul {
+        padding: 2rem;
+    }
+}
+
+.dark-footer {
+    footer {
+        background-color: #0a0c0e;
+        color:#EEEDED;
+        a {
+            color:#EEEDED;
+        }
+    }
+}
+
+app-root {
+    padding: 0;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
