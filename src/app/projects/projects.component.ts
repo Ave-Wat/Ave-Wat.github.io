@@ -19,4 +19,12 @@ export class ProjectsComponent implements OnInit {
     .subscribe(projects => this.projects = projects);
   }
 
+  handleIndex(i: any) {
+    if(i + 1 < 10){
+      return "0" + (i + 1).toString();
+    } else {
+      return i + 1
+    }
+  }
+
 }
