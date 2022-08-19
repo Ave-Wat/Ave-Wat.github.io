@@ -8,6 +8,7 @@
     --main-white: #EEEDED;
     --main-red: #BA6655;
     --main-blue: #55A9BA;
+    --main-dark-blue: #263238;
 }
 
 body, html {
@@ -81,6 +82,11 @@ footer {
 
 app-root {
     padding: 0;
+}
+
+app-projects{
+
+    background-color: var(--main-white);
 }
 
 @keyframes slideInFromLeft {

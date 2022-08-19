@@ -1,18 +1,22 @@
+<h2 class="projects__header">Recent Work</h2>
 <ul>
+    <div class="projects__container">
     <li *ngFor="let project of projects; let i = index;">
         <div class="project">
-            <div class="project__index" [innerHTML]="i + 1 "></div>
+            <div class="project__index">
+                <div class="podcast__index-inner" [innerHTML]="handleIndex(i)"></div>
+            </div>
             <div class="project__button">
                 <article class="project__container">
                     <img class="project__img" [src]="project.image_src">
                     <div class="project__details">
-                        <h2 class="project__gray_on_hover" [innerHTML]="project.name"></h2>
-                        <div class=" project__highlight_on_hover">
-                            <a class="project__details__links" ng-if="project.github_link" href={{project.github_link}}>
+                        <h3 class="project__gray_on_hover text-size-2" [innerHTML]="project.name"></h3>
+                        <div class="project__details__links">
+                            <a ng-if="project.github_link" href={{project.github_link}}>
                                 <i class="fab fa-github"></i>
                                 GitHub
                             </a>
-                            <a class="project__details__links" ng-if="project.web_link" href={{project.web_link}}>
+                            <a ng-if="project.web_link" href={{project.web_link}}>
                                 <i class="fa fa-link"></i>
                                 WEBSITE
                             </a>
@@ -23,4 +27,5 @@
             </div>
         </div>
     </li>
+</div>
 </ul>

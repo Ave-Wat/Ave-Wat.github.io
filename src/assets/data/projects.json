@@ -74,7 +74,7 @@
 
     {
         "name": "MIAC Cross Country Analysis",
-        "description": "This was the final project for CS257. This project is a full-stack web application featuring front-end and a Posgresql database driven Flask API.",
+        "description": "The final for CS257 is a full-stack web application featuring front-end and a Posgresql database driven Flask API.",
         "languages": [
             "Python",
             "JavaScript",
