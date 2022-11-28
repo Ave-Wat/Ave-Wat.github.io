@@ -6,24 +6,22 @@
             <div class="project__index">
                 <div class="podcast__index-inner" [innerHTML]="handleIndex(i)"></div>
             </div>
-            <div class="project__button">
-                <article class="project__container">
-                    <img class="project__img" [src]="project.image_src">
-                    <div class="project__details">
-                        <h3 class="project__gray_on_hover text-size-2" [innerHTML]="project.name"></h3>
-                        <div class="project__details__links">
-                            <a ng-if="project.github_link" href={{project.github_link}}>
-                                <i class="fab fa-github"></i>
-                                GitHub
-                            </a>
-                            <a ng-if="project.web_link" href={{project.web_link}}>
-                                <i class="fa fa-link"></i>
-                                WEBSITE
-                            </a>
-                        </div>
+            <div class="project__container">
+                <!--<img class="project__img" [src]="project.image_src">-->
+                <div class="project__details">
+                    <h3 class="project__gray_on_hover text-size-2" [innerHTML]="project.name"></h3>
+                    <div class="project__details__links">
+                        <a *ngIf="project.github_link" href={{project.github_link}}>
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                        <a *ngIf="project.web_link" href={{project.web_link}}>
+                            <i class="fa fa-link"></i>
+                            WEBSITE
+                        </a>
                     </div>
-                    <div class="project__description" [innerHTML]="project.description">project description</div>
-                </article>
+                </div>
+                <div class="project__description" [innerHTML]="project.description">project description</div>
             </div>
         </div>
     </li>
