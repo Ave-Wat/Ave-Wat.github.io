@@ -4,7 +4,7 @@
   &__container {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    //align-items: stretch;
     padding: 30px 0 100px 0;
     @media screen and (min-width: 810px) {
       align-items: center;
@@ -17,7 +17,6 @@
 }
 
 .project {
-    display:flex;
     padding: 1rem 1rem 6rem 1rem;
     text-align: left;
     position: relative;
@@ -26,105 +25,48 @@
     } 
   
     &__index {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex: auto;
+      position: absolute;
+      top: 0px;
+      right: 2.25rem;
+      font-size: 8em;
       color: var(--main-white);
       font-family: 'Montserrat', sans-serif;
-      font-weight: bolder;
-      font-size: 3rem;
-      line-height: 3rem;
-      //background-color: var(--main-blue);
-      border-radius: 50%;
-      height: 3rem; /* You must set a specified height */
-      width: 3rem;
-      background-size: contain;
-      background-position: left; /* Center the image */
-      background-repeat: no-repeat; /* Do not repeat the image */
-      
-      @media screen and (max-width: 810px)
+      pointer-events: none;
+      @media screen and (min-width: 810px)
       {
-        display: none;
-      } 
-    }
-  
-    &__button {
-      flex: auto;
-      background-color: var(--main-white);
-      color: var(--main-black);
-      padding: 0;
-      margin: 0 0 0 2rem;
-      height: 100%;
-      box-shadow: 0 0 10px 5px var(--main-dark-blue);
-      border-radius: 2px;
-      border: none;
-  
-      :hover {
-        cursor: default;
-        .project__highlight_on_hover {
-          color: var(--main-blue);
-          img {
-            filter: brightness(0) saturate(100%) invert(65%) sepia(82%) saturate(4391%) hue-rotate(349deg) brightness(104%) contrast(98%);
-          }
-        }
-        .project__gray_on_hover {
-          color: gray;
-        }
-        a {
-          cursor: pointer;
-        }
+        right: calc((100% - 700px)/2 + .25rem);
       }
-  
-      @media screen and (max-width: 810px){
-        margin: 0 1rem;
-      } 
     }
   
     &__container {
-      flex-grow: 1;
-      width: 100%;
-      margin-top: 0;
-      padding: 2rem 0rem;
-      display: flex;
-      flex-wrap: wrap;
+      background: rgba(255,255,255,.1);
+      box-shadow: 20px 20px 50px rgba(0,0,0,.5);
+      color: var(--main-white);
+      margin: 0 2rem;
+      height: 100%;
+      width: calc(100% - 4rem);
+      box-sizing: border-box;
+      //sbox-shadow: 0 0 10px 5px var(--main-dark-blue);
+      border-radius: 10px;
+      border-top: 1px solid rgba(255,255,255,.5);
+      border-left: 1px solid rgba(255,255,255,.5);
+      backdrop-filter: blur(5px);
+      padding: 2rem;
       @media screen and (min-width: 810px)
       {
         width: 700px;
-        flex-wrap: nowrap;
       } 
     }
-  
-    &__img {
-      flex: .2 .2 0;
-      margin-left: 1rem;
-      height: 15%;
-      width: 15%;
-      border-radius: 2px;
-      filter: grayscale(70%);
-      @media screen and (max-width: 810px){
-        flex: .4 .4 0;
-      }
-    }
+
     &__details {
-      @media screen and (min-width: 810px){
-        flex: .4 .4 0;
-        margin: 0 2rem;
-        padding-bottom: 1.5rem;
-        
-      }
-      flex: .6 .6 0;
-      margin: 0 2rem;
-      padding-bottom: 3rem;
-      position: relative;
-  
+      margin-right: 4rem;
+
       h3 {
         margin: 0;
         text-align: left;
         margin-bottom: .5rem;
       }
       div {
-        margin: 0;
         text-align: left;
         padding: .5rem 0 0 0;
       }
@@ -142,12 +84,9 @@
   
       &__links {
         color: gray;
-        position: absolute;
-        bottom: 0px;
         width: 100%;
-        padding:.25rem 0;
+        margin-right: 5rem !important;
         border-top: 1px solid var(--main-red);
-        text-align: left;
         font-size: .7rem;
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
@@ -160,13 +99,9 @@
     }
   
     &__description {
-      @media screen and (min-width: 810px){
-        flex: .4 .4 0;
-        margin: 0 2rem 0 0;
-      }
       
-      margin: 2rem;
+      margin: 2rem 0;
       text-align: left;
-      font-size: .9rem;
+      font-size: 1rem;
     }
   }
